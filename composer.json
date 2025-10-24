@@ -1,0 +1,32 @@
+{
+    "name": "renderbit/backpack-2fa",
+    "type": "library",
+    "description": "2FA integration for Laravel Backpack using Fortify",
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0 || ^11.0",
+        "backpack/crud": "^6.0",
+        "pragmarx/google2fa-qrcode": "^2.0",
+        "laravel/fortify": "^1.31"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Renderbit\\Backpack2fa\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aditya V Jajodia",
+            "email": "aditya.v.jajodia@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Renderbit\\Backpack2fa\\Backpack2FAServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
