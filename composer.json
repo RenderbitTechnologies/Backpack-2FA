@@ -2,6 +2,14 @@
     "name": "renderbit/backpack-2fa",
     "type": "library",
     "description": "2FA integration for Laravel Backpack using Fortify",
+    "version": "1.0.0",
+    "keywords": ["backpack", "totp", "laravel", "fortify", "two-factor-authentication", "auth", "2FA"],
+    "homepage": "https://github.com/renderbit/backpack-2fa",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/RenderbitTechnologies/backpack-2fa/issues",
+        "source": "https://github.com/RenderbitTechnologies/backpack-2fa"
+    },
     "require": {
         "php": "^8.1",
         "illuminate/support": "^10.0 || ^11.0",
@@ -9,7 +17,6 @@
         "pragmarx/google2fa-qrcode": "^2.0",
         "laravel/fortify": "^1.31"
     },
-    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Renderbit\\Backpack2fa\\": "src/"
@@ -28,5 +35,6 @@
             ]
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
