@@ -2,7 +2,7 @@
     "name": "renderbit/backpack-2fa",
     "type": "library",
     "description": "2FA integration for Laravel Backpack using Fortify",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": ["backpack", "totp", "laravel", "fortify", "two-factor-authentication", "auth", "2FA"],
     "homepage": "https://github.com/renderbit/backpack-2fa",
     "license": "MIT",
