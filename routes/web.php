@@ -21,9 +21,10 @@ Route::group([
     Route::post('two-factor/disable', [TwoFactorProfileController::class, 'disable'])->name('admin.twofactor.disable');
     Route::post('two-factor/recovery-codes', [TwoFactorProfileController::class, 'regenerateRecoveryCodes'])->name('admin.twofactor.recovery');
     Route::post('two-factor/recovery-codes-download', [TwoFactorProfileController::class, 'downloadRecoveryCodes'])->name('admin.twofactor.download');
-    Route::get('setup-two-factor', [TwoFactorProfileController::class, 'setupTwoFactorAuthentication'])->name('two-factor.setup');
-    Route::get('two-factor/cancel', [TwoFactorProfileController::class, 'cancel2faFlow'])->name('twofactor.cancel');
+    Route::get('setup-two-factor', [TwoFactorProfileController::class, 'setupTwoFactorAuthentication'])->name('two-factor.setup');    
 });
+
+Route::get('two-factor/cancel', [TwoFactorProfileController::class, 'cancel2faFlow'])->name('twofactor.cancel');
 
 // Fortify’s login challenge routes also need the Backpack guard and web middleware
 Route::group([
