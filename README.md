@@ -47,7 +47,9 @@ php artisan vendor:publish --provider="Renderbit\Backpack2fa\Backpack2FAServiceP
 ],
 ```
 
-4. Clear config cache:
+4. Add the `TwoFactorAuthenticatable` trait from `Laravel\Fortify\TwoFactorAuthenticatable` to your authenticable model.
+
+5. Clear config cache:
 
 ```bash
 php artisan config:clear
